@@ -1,0 +1,19 @@
+打开IDF_v6.1_Powershell
+
+m:
+cd M:\uart_wifi_bridge
+
+
+idf.py set-target esp32s3
+idf.py menuconfig              :: Serial flasher config -> Flash size 8MB
+idf.py build
+
+idf.py -p COM26 -b 115200 flash
+
+idf.py flash monitor
+
+合并固件
+idf.py merge-bin
+
+
+
