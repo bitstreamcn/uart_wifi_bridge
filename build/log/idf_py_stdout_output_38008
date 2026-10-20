@@ -1,4 +1,0 @@
-esptool.py --chip esp32s3 merge_bin -o merged-binary.bin -f raw --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 uart_wifi_bridge.bin 0x8000 partition_table/partition-table.bin
-esptool.py v4.12.0
-SHA digest in image updated
-Wrote 0xd4be0 bytes to file merged-binary.bin, ready to flash to offset 0x0
